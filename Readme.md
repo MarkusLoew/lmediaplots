@@ -5,6 +5,10 @@ lmediaplots
 
 R-package to create diagnostic plots of nested lme models
 
+
+Provides a convenience function to create diagnostic plots for random effects in a lme object. Creates plots per group of either the within-group residuals for each random effect, standardised vs fitted values or qq plots.
+
+
 See 
 
 	help(package = lmediaplots) 
