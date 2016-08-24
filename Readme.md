@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/MarkusLoew/lmediaplots.svg?branch=master)](https://travis-ci.org/MarkusLoew/lmediaplots)
 
-Lmediaplots
+lmediaplots
 ==============
 
 R-package to create diagnostic plots of nested lme models
@@ -26,7 +26,7 @@ Based on a model from Pinheiro, Bates (2000) Mixed-Effect Models in S and S-PLUS
 
 ```{r}
 library(nlme)
-library(Lmediaplots)
+library(lmediaplots)
 fm1Machine <- lme(score ~ Machine, data = Machines, random = ~ 1 | Worker/Machine)
 lmediaplots(fm1Machine)
 lmediaplots(fm1Machine, plottype = "resvfit")
