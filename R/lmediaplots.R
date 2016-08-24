@@ -2,7 +2,7 @@
 #' @description Function to create diagnostic plots for each random effect and for each group of a nested model.
 #' @param lme.obj A "lme" object created using package "nlme". Must have a nesting / within component.
 #' @param plottype Type of the diagnostic plot to create. Either "within" for box/scatter - plots of within-group residuals, or "resvfit" for a plot of the standardized residuals versus fitted values per group, or "qq" for diagnostic plots for assessing the normality of residuals and random effects in the linear mixed-effects fit per group. Default is "within".
-#' @return List of plots. One plot for each random factor.
+#' @return List of plots. One plot for each random factor in the model.
 #' @examples
 #' # based on example from Pinheiro, Bates (2000) Mixed-Effect Models in S and S-PLUS. Springer.
 #' library(nlme)
@@ -23,9 +23,7 @@ lmediaplots <- function(lme.obj, plottype = "within") {
    
    if("(Intercept)" %in% the.names) {
        stop("Model not nested")}
-   
-   #stopifnot(("(Intercept)" %in% the.names) == FALSE)
-   
+
    if (plottype == "within") {
 	   form.end <- "~ resid(.)"
 	   form <- plyr::llply(the.names,
