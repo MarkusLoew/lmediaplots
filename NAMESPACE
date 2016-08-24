@@ -1,2 +1,2 @@
-export(Lmediaplots)
+export(lmediaplots)
 importFrom("stats", "formula")

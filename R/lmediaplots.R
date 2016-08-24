@@ -7,14 +7,14 @@
 #' # based on example from Pinheiro, Bates (2000) Mixed-Effect Models in S and S-PLUS. Springer.
 #' library(nlme)
 #' fm1Machine <- lme(score ~ Machine, data = Machines, random = ~ 1 | Worker/Machine)
-#' Lmediaplots(fm1Machine)
-#' Lmediaplots(fm1Machine, plottype = "resvfit")
-#' Lmediaplots(fm1Machine, plottype = "qq")
-#' Lmediaplots(fm1Machine, plottype = "qq")[1]
+#' lmediaplots(fm1Machine)
+#' lmediaplots(fm1Machine, plottype = "resvfit")
+#' lmediaplots(fm1Machine, plottype = "qq")
+#' lmediaplots(fm1Machine, plottype = "qq")[1]
 #' @export
 
 
-Lmediaplots <- function(lme.obj, plottype = "within") {
+lmediaplots <- function(lme.obj, plottype = "within") {
    
    stopifnot(plottype %in% c("within", "resvfit", "qq"))
    

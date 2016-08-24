@@ -1,4 +1,4 @@
-Package: Lmediaplots
+Package: lmediaplots
 Title: Creates diagnostic plots for lme objects
 Version: 0.0.1.9000
 Authors@R: person("Markus", "Loew", email = "m.loew@unimelb.edu.au", role = c("aut", "cre"))
@@ -15,5 +15,5 @@ Imports:
     nlme,
     plyr
 Maintainer: Markus Löw <m.loew@unimelb.edu.au>
-URL: https://github.com/MarkusLoew/Lmediaplots
+URL: https://github.com/MarkusLoew/lmediaplots
 RoxygenNote: 5.0.1
