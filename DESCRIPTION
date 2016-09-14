@@ -1,8 +1,8 @@
 Package: lmediaplots
 Title: Creates diagnostic plots for lme objects
-Version: 0.1.1.0000
+Version: 0.1.2
 Authors@R: person("Markus", "Loew", email = "m.loew@unimelb.edu.au", role = c("aut", "cre"))
-Description: Provides a convenience function to create diagnostic plots for
+Description: Provides a convenience function to create diagnostic plots for the grouping elements of 
     random effects in a lme object. Creates either plots of the within-group
     residuals for each random effect, plots of standardised vs fitted values or qq
     plots.

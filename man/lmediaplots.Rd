@@ -2,7 +2,7 @@
 % Please edit documentation in R/lmediaplots.R
 \name{lmediaplots}
 \alias{lmediaplots}
-\title{Function to create diagnostic plots for each random effect element of a lme object with a nesting ("within") component.}
+\title{Function to create diagnostic plots for each grouping element of a lme object with a nesting ("within") component.}
 \usage{
 lmediaplots(lme.obj, plottype = "within")
 }
@@ -12,10 +12,10 @@ lmediaplots(lme.obj, plottype = "within")
 \item{plottype}{Type of the diagnostic plot to create. Either "within" for box/scatter - plots of within-group residuals, or "resvfit" for a plot of the standardized residuals versus fitted values per group, or "qq" for diagnostic plots for assessing the normality of residuals and random effects in the linear mixed-effects fit per group. Default is "within".}
 }
 \value{
-List of plots. One plot for each random factor.
+List of plots. One plot for each grouping factor in the model.
 }
 \description{
-Function to create diagnostic plots for each random effect and for each group of a nested model.
+Function to create diagnostic plots for the group elements of the random effect part of a nested model.
 }
 \examples{
 # based on example from Pinheiro, Bates (2000) Mixed-Effect Models in S and S-PLUS. Springer.
