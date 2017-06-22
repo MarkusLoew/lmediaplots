@@ -1,6 +1,6 @@
 Package: lmediaplots
 Title: Creates diagnostic plots for lme objects
-Version: 0.1.2
+Version: 0.1.3
 Authors@R: person("Markus", "Loew", email = "m.loew@unimelb.edu.au", role = c("aut", "cre"))
 Description: Provides a convenience function to create diagnostic plots for the grouping elements of 
     random effects in a lme object. Creates either plots of the within-group
@@ -16,4 +16,4 @@ Imports:
     plyr
 Maintainer: Markus Löw <m.loew@unimelb.edu.au>
 URL: https://github.com/MarkusLoew/lmediaplots
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1

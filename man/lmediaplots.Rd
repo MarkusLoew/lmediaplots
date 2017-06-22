@@ -26,4 +26,3 @@ lmediaplots(fm1Machine, plottype = "resvfit")
 lmediaplots(fm1Machine, plottype = "qq")
 lmediaplots(fm1Machine, plottype = "qq")[1]
 }
-

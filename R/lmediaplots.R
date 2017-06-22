@@ -56,7 +56,7 @@ lmediaplots <- function(lme.obj, plottype = "within") {
 		             function(x) {
 		             # using 0.05 for the significance level 
 		             # for a two-sided outlier test 
-		             stats::qqnorm(lme.obj, x, id = 0.05, abline = c(0, 1))})
+		             stats::qqnorm(lme.obj, x, id = 0.05)})
 	   return(plotlist)
    }
 }
